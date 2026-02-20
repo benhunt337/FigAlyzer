@@ -175,9 +175,11 @@ async function callClaude(treeData) {
     }
 
     const content = data.content && data.content[0] && data.content[0].text;
+    console.log("RAW CLAUDE RESPONSE:", content);
     if (!content) throw new Error("Empty response from Claude");
 
     const instructions = parseInstructions(content);
+    console.log("PARSED INSTRUCTIONS:", JSON.stringify(instructions).substring(0, 500));
     if (!instructions || instructions.length === 0) {
       setStatus("Claude returned no restructuring operations. The design may already be well-structured.", "success");
       analyzeBtn.disabled = false;
