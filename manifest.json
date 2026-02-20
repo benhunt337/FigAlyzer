@@ -12,8 +12,8 @@
   "ui": "ui.html",
   "networkAccess": {
     "allowedDomains": [
-      "https://figalyzer.vercel.app"
-    ],
+  "https://restructurer-proxy-v2.vercel.app"
+],
     "reasoning": "Sends design structure to AI for layout analysis and restructuring",
     "devAllowedDomains": [
       "http://localhost:3000"
