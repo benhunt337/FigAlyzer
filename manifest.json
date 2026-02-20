@@ -12,7 +12,11 @@
   "ui": "ui.html",
   "networkAccess": {
     "allowedDomains": [
-      "none"
+      "https://figalyzer.vercel.app"
+    ],
+    "reasoning": "Sends design structure to AI for layout analysis and restructuring",
+    "devAllowedDomains": [
+      "http://localhost:3000"
     ]
   }
 }
